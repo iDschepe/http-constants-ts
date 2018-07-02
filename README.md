@@ -8,6 +8,12 @@ All headers are capitalized, hence `Access-Control-Request-Method`
 
 All mime-types are lowercase, hence `video/mpeg`
 
+Constant names constructed from uppercase value, `-` and `+` substituted with `_`, hence
+
+    Headers.STRICT_TRANSPORT_SECURITY //Strict-Transport-Security
+	MimeTypes.Application.XOP_XML     //application/xop+xml
+	MimeTypes.Model.X3D_VRML          //model/x3d+vrml
+
 ## Usage
 
 Install local
@@ -57,6 +63,22 @@ Import and usage, as exemplified by express js middleware
         }
 		
 	}
+	
+To use mime types first access type, then subtype:
+
+	MimeTypes.Application.SOAP_XML              //application/soap+xml
+	MimeTypes.Application.X.WWW_FORM_URLENCODED //application/x-www-form-urlencoded
+	MimeTypes.X.WWW_FORM_URLENCODED             //application/x-www-form-urlencoded
+	MimeTypes.Vnd.Od.TEXT                       //application/vnd.oasis.opendocument.text
+	MimeTypes.Vnd.MS.EXCEL                      //application/vnd.ms-excel
+	MimeTypes.Vnd.MS.EXCEL_2007                 //application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+	MimeTypes.Pkcs.X_PKCS7_CERTREQRESP          //application/x-pkcs7-certreqresp
+	
+There are also two duplicates for mime types. One is `MimeTypes.X` and `MimeType.Application.X`, another is `MimeTypes.Pkcs` and `MimeTypes.Application.Pkcs`
+	
+## Dependencies
+
+No additional dependencies for production, `mocha` and `chai` for testing.
 	
 ## Test
 

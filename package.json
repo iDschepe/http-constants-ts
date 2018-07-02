@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/sypachev_s_s/card-validation.git"
+    "url": "git+https://bitbucket.org/sypachev_s_s/http-headers-js.git"
   },
-  "homepage": "https://bitbucket.org/sypachev_s_s/card-validation#readme"
+  "homepage": "https://bitbucket.org/sypachev_s_s/http-headers-js#readme"
 }
