@@ -162,7 +162,7 @@ let MimeTypes = {
 		}
 	},
 	"Audio": {
-		"BASIC"             "audio/basic",
+		"BASIC":            "audio/basic",
 		"L24":              "audio/L24",
 		"MP4":              "audio/mp4",
 		"AAC":              "audio/aac",
@@ -273,7 +273,7 @@ let MimeTypes = {
 
 module.exports.Headers          = Headers;
 module.exports.TrackingStatuses = TrackingStatuses;
-module.exports.mimeTypes        = MimeTypes;
+module.exports.MimeTypes        = MimeTypes;
 
 
 
