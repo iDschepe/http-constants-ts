@@ -1,0 +1,32 @@
+{
+  "name": "http-headers-js",
+  "version": "1.0.0",
+  "description": "Standard and common non-standard HTTP headers and MIME-types",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test"
+  },
+  "keywords": [
+    "http headers",
+	"headers",
+	"mime-types",
+	"standard",
+	"list of headers",
+	"list of mime-types"
+  ],
+  "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/sypachev_s_s/card-validation.git"
+  },
+  "homepage": "https://bitbucket.org/sypachev_s_s/card-validation#readme"
+}
