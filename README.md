@@ -22,7 +22,7 @@ Install local
 	
 Available at the moment
 
-    let { Headers, TrackingStatuses, MimeTypes } = require('');
+    let { Headers, TrackingStatuses, MimeTypes } = require('http-headers-js');
 	
 - Headers - headers
 - TrackingStatuses - tracking statuses
