@@ -30,14 +30,17 @@ let Headers = {
     "ACCEPT_DATETIME":                   "Accept-Datetime",
     "ACCESS_CONTROL_REQUEST_METHOD":     "Access-Control-Request-Method",
     "ACCESS_CONTROL_REQUEST_HEADERS":    "Access-Control-Request-Headers",
+	"ALTERNATES":                        "Alternates",
     "AUTHORIZATION":                     "Authorization",
     "CACHE_CONTROL":                     "Cache-Control",
     "CONNECTION":                        "Connection",
     "CONTENT_LENGTH":                    "Content-Length",
     "CONTENT_MD5":                       "Content-MD5",
     "CONTENT_TYPE":                      "Content-Type",
+	"CONTENT_VERSION":                   "Content-Version",
     "COOKIE":                            "Cookie",
     "DATE":                              "Date",
+	"DERIVED_FROM":                      "Derived-From",
     "EXPECT":                            "Expect",
     "FORWARDED":                         "Forwarded",
     "FROM":                              "From",
@@ -48,6 +51,7 @@ let Headers = {
     "IF_RANGE":                          "If-Range",
     "IF_UNMODIFIED_SINCE":               "If-Unmodified-Since",
     "MAX_FORWARDS":                      "Max-Forwards",
+	"MIME_VERSION":                      "MIME-Version",
     "ORIGIN":                            "Origin",
     "PRAGMA":                            "Pragma",
     "PROXY_AUTHORIZATION":               "Proxy-Authorization",
@@ -106,6 +110,7 @@ let Headers = {
     "P3P":                               "P3P",
     "PRAGMA":                            "Pragma",
     "PROXY_AUTHENTICATE":                "Proxy-Authenticate",
+	"PUBLIC":                            "Public",
     "PUBLIC_KEY_PINS":                   "Public-Key-Pins",
     "RETRY_AFTER":                       "Retry-After",
     "SERVER":                            "Server",
@@ -113,6 +118,7 @@ let Headers = {
     "STRICT_TRANSPORT_SECURITY":         "Strict-Transport-Security",
     "TRAILER":                           "Trailer",
     "TRANSFER_ENCODING":                 "Transfer-Encoding",
+	"TITLE":                             "Title",
     "TK":                                "Tk",
     "VARY":                              "Vary",
     "VIA":                               "Via",
@@ -134,6 +140,20 @@ let Headers = {
     "X_XSS_PROTECTION":                  "X-XSS-Protection",
 	"WIDTH":                             "Width",
 	"VIEWPORT-WIDTH":                    "Viewport-Width"
+};
+
+let ContentEncodings = {
+	"GZIP":         "gzip",
+	"COMPRESS":     "compress",
+	"DEFLATE":      "deflate",
+	"IDENTITY":     "identity",
+	"BR":           "br",
+	"SDCH":         "sdch",
+	"AES128GCM":    "aes128gcm",
+	"EXI":          "exi",
+	"PACK200_GZIP": "pack200-gzip",
+	"X_COMPRESS":   "x-compress",
+	"X_GZIP":       "x-gzip"
 };
 
 let TrackingStatuses = {
@@ -303,6 +323,7 @@ module.exports.Headers          = Headers;
 module.exports.TrackingStatuses = TrackingStatuses;
 module.exports.MimeTypes        = MimeTypes;
 module.exports.Methods			= Methods;
+module.exports.ContentEncodings = ContentEncodings;
 
 
 

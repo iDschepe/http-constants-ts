@@ -1,12 +1,14 @@
 # Standard and common HTTP headers and Mime types
 
-> current version 1.0.2
+> current version 1.0.3
 
-Provides standard and common non-standard http headers, mime-types and tracking statuses.
+Provides standard and common non-standard http headers, mime-types, methods, content codings and tracking statuses.
 
 All headers are capitalized, hence `Access-Control-Request-Method`
 
 All mime-types are lowercase, hence `video/mpeg`
+
+All content codings are lowercase, hence `deflate`
 
 All methods are uppercase, hence `POST`
 
@@ -15,6 +17,7 @@ Constant names constructed from uppercase value, `-` and `+` substituted with `_
     Headers.STRICT_TRANSPORT_SECURITY //Strict-Transport-Security
     MimeTypes.Application.XOP_XML     //application/xop+xml
     MimeTypes.Model.X3D_VRML          //model/x3d+vrml
+    ContentEncodings.X_GZIP           //x-gzip
 
 ## Usage
 
@@ -28,12 +31,14 @@ Available at the moment
         Headers, 
         TrackingStatuses, 
         MimeTypes, 
-        Methods 
+        Methods,
+        ContentEncodings
     } = require('http-headers-js');
     
 - Headers - headers
 - TrackingStatuses - tracking statuses
 - Methods - http methods
+- ContentEncodings - http content coding registry
 - MimeTypes - yes, mime types, fair and square
 
     
@@ -105,3 +110,6 @@ Issues? Write to `sypachev_s_s@mail.ru`
 ### 1.0.2
 - Added `Methods`
 - Added `Last-Event-ID`, `DPR`, `Content-DPR`, `Accept-CH`, `Accept-CH-Lifetime`, `Width`, `Viewport-Width`, `Keep-Alive` headers
+### 1.0.3
+- Added `Content-Version`, `Derived-From`, `Alternates`, `MIME-Version`, `Public`, `Title` headers
+- Added `ContentEncodings`

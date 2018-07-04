@@ -1,5 +1,11 @@
 let chai = require('chai'),
-   { Headers, TrackingStatuses, MimeTypes, Methods } = require('../index.js');
+   { 
+		Headers, 
+		TrackingStatuses, 
+		MimeTypes, 
+		Methods, 
+		ContentEncodings
+	} = require('../index.js');
 
 describe("Just upload", () => {
 	it ("shouldn't fail", () => {
@@ -36,6 +42,14 @@ describe("Test Methods", () => {
 		chai.expect(Methods.POST).to.equal("POST");
 		chai.expect(Methods.COPY).to.equal("COPY");
 		chai.expect(Methods.VIEW).to.equal("VIEW");
+	});
+});
+
+describe("Test ContentEncodings", () => {
+	it ("should access some", () => {
+		chai.expect(ContentEncodings.GZIP).to.equal("gzip");
+		chai.expect(ContentEncodings.DEFLATE).to.equal("deflate");
+		chai.expect(ContentEncodings.BR).to.equal("br");
 	});
 });
 
