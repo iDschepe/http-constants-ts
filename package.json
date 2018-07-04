@@ -1,6 +1,6 @@
 {
   "name": "http-headers-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Standard and common non-standard HTTP headers and MIME-types",
   "main": "index.js",
   "scripts": {
@@ -15,8 +15,8 @@
     "list of headers",
     "list of mime-types",
     "http methods",
-	"content-encoding",
-	"content codings"
+    "content-encoding",
+    "content codings"
   ],
   "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
   "license": "ISC",
