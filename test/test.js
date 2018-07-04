@@ -1,5 +1,5 @@
 let chai = require('chai'),
-   { Headers, TrackingStatuses, MimeTypes } = require('../index.js');
+   { Headers, TrackingStatuses, MimeTypes, Methods } = require('../index.js');
 
 describe("Just upload", () => {
 	it ("shouldn't fail", () => {
@@ -28,6 +28,14 @@ describe("Test MimeTypes", () => {
 		chai.expect(MimeTypes.Pkcs.X_PKCS12).to.equal(MimeTypes.Application.Pkcs.PKCS12);
 		chai.expect(MimeTypes.X.WWW_FORM_URLENCODED).to.equal(MimeTypes.Application.X.WWW_FORM_URLENCODED);
 		chai.expect(MimeTypes.Vnd.MS.EXCEL).to.equal("application/vnd.ms-excel");
+	});
+});
+
+describe("Test Methods", () => {
+	it ("should access some", () => {
+		chai.expect(Methods.POST).to.equal("POST");
+		chai.expect(Methods.COPY).to.equal("COPY");
+		chai.expect(Methods.VIEW).to.equal("VIEW");
 	});
 });
 

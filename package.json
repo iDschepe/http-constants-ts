@@ -13,7 +13,8 @@
     "standard",
     "tracking status",
     "list of headers",
-    "list of mime-types"
+    "list of mime-types",
+	"http methods"
   ],
   "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
   "license": "ISC",

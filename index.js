@@ -1,7 +1,29 @@
+let Methods = {
+	"GET":				"GET",
+	"HEAD":				"HEAD",
+	"POST":				"POST",
+	"PUT":				"PUT",
+	"OPTIONS":			"OPTIONS",
+	"DELETE":			"DELETE",
+	"CONNECT":			"CONNECT",
+	"TRACE":			"TRACE",
+	"PATCH":			"PATCH",
+	"COPY":				"COPY",
+	"LINK":				"LINK",
+	"UNLINK":			"UNLINK",
+	"PURGE":			"PURGE",
+	"LOCK":				"LOCK",
+	"UNLOCK":			"UNLOCK",
+	"PROPFIND":			"PROPFIND",
+	"VIEW":				"VIEW"
+};
+
 let Headers = {
 /*STANDRD*/
     "A_IM":                              "A-IM",
     "ACCEPT":                            "Accept",
+	"ACCEPT_CH":                         "Accept-CH",
+	"ACCEPT_CH_LIFETIME":                "Accept-CH-Lifetime",
     "ACCEPT_CHARSET":                    "Accept-Charset",
     "ACCEPT_ENCODING":                   "Accept-Encoding",
     "ACCEPT_LANGUAGE":                   "Accept-Language",
@@ -36,6 +58,7 @@ let Headers = {
     "UPGRADE":                           "Upgrade",
     "VIA":                               "Via",
     "WARNING":                           "Warning",
+	"KEEP_ALIVE":                        "Keep-Alive",
 /*COMMON*/
     "UPGRADE_INSECURE_REQUESTS":         "Upgrade-Insecure-Requests",
     "X_REQUESTED_WITH":                  "X-Requested-With",
@@ -66,14 +89,17 @@ let Headers = {
     "ALT_SVC":                           "Alt-Svc",
     "CONNECTION":                        "Connection",
     "CONTENT_DISPOSITION":               "Content-Disposition",
+	"CONTENT_DPR":                       "Content-DPR",
     "CONTENT_ENCODING":                  "Content-Encoding",
     "CONTENT_LANGUAGE":                  "Content-Language",
     "CONTENT_LOCATION":                  "Content-Location",
     "CONTENT_RANGE":                     "Content-Range",
     "DELTA_BASE":                        "Delta-Base",
+	"DPR":                               "DPR",
     "ETAG":                              "ETag",
     "EXPIRES":                           "Expires",
     "IM":                                "IM",
+	"LAST_EVENT_ID":                     "Last-Event-ID",
     "LAST_MODIFIED":                     "Last-Modified",
     "LINK":                              "Link",
     "LOCATION":                          "Location",
@@ -105,7 +131,9 @@ let Headers = {
     "X_REQUEST_ID":                      "X-Request-ID",
     "X_CORRELATION_ID":                  "X-Correlation-ID",
     "X_UA_COMPATIBLE":                   "X-UA-Compatible",
-    "X_XSS_PROTECTION":                  "X-XSS-Protection"
+    "X_XSS_PROTECTION":                  "X-XSS-Protection",
+	"WIDTH":                             "Width",
+	"VIEWPORT-WIDTH":                    "Viewport-Width"
 };
 
 let TrackingStatuses = {
@@ -274,6 +302,7 @@ let MimeTypes = {
 module.exports.Headers          = Headers;
 module.exports.TrackingStatuses = TrackingStatuses;
 module.exports.MimeTypes        = MimeTypes;
+module.exports.Methods			= Methods;
 
 
 

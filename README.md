@@ -1,12 +1,14 @@
 # Standard and common HTTP headers and Mime types
 
-> current version 1.0.1
+> current version 1.0.2
 
 Provides standard and common non-standard http headers, mime-types and tracking statuses.
 
 All headers are capitalized, hence `Access-Control-Request-Method`
 
 All mime-types are lowercase, hence `video/mpeg`
+
+All methods are uppercase, hence `POST`
 
 Constant names constructed from uppercase value, `-` and `+` substituted with `_`, hence
 
@@ -22,11 +24,18 @@ Install local
 	
 Available at the moment
 
-    let { Headers, TrackingStatuses, MimeTypes } = require('http-headers-js');
+    let { 
+	    Headers, 
+		TrackingStatuses, 
+		MimeTypes, 
+		Methods 
+	} = require('http-headers-js');
 	
 - Headers - headers
 - TrackingStatuses - tracking statuses
+- Methods - http methods
 - MimeTypes - yes, mime types, fair and square
+
 	
 Import and usage, as exemplified by express js middleware
 
@@ -91,5 +100,31 @@ See [bitbucket repository](https://bitbucket.org/sypachev_s_s/http-headers-js/)
 ## Direct Contacts
 
 Issues? Write to `sypachev_s_s@mail.ru`
+
+## What's new
+### 1.0.2
+- Added `Methods`
+- Added `Last-Event-ID`, `DPR`, `Content-DPR`, `Accept-CH`, `Accept-CH-Lifetime`, `Width`, `Viewport-Width`, `Keep-Alive` headers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	
