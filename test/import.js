@@ -5,6 +5,7 @@ console.log(Headers.AUTHORIZATION);
 let mt = require('http-headers-js').MimeTypes;
 
 console.log(mt.Image.GIF);
+console.log(mt.Image.VND_WAP_WBMP);
 
 let { Methods } = require('http-headers-js');
 
