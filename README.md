@@ -37,7 +37,7 @@ Available at the moment
         MimeTypes, 
         Methods,
         ContentEncodings,
-		ResponseCodes
+        ResponseCodes
     } = require('http-headers-js');
     
 - Headers - headers
