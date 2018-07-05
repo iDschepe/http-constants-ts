@@ -1,6 +1,6 @@
 # Standard and common HTTP headers and Mime types
 
-> current version 1.0.4
+> current version 1.0.5
 
 Provides standard and common non-standard http headers, mime-types, methods, content codings and tracking statuses.
 
