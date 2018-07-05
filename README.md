@@ -12,12 +12,13 @@ All content codings are lowercase, hence `deflate`
 
 All methods are uppercase, hence `POST`
 
-Constant names constructed from uppercase value, `-` and `+` substituted with `_`, hence
+Key names constructed from uppercase values, `-`, `+` and `.` substituted with `_`, hence
 
     Headers.STRICT_TRANSPORT_SECURITY //Strict-Transport-Security
     MimeTypes.Application.XOP_XML     //application/xop+xml
     MimeTypes.Model.X3D_VRML          //model/x3d+vrml
     ContentEncodings.X_GZIP           //x-gzip
+	MimeTypes.Image.VND_WAP_WBMP      //image/vnd.wap.wbmp
 
 ## Usage
 
