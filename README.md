@@ -12,7 +12,7 @@ All content codings are lowercase, hence `deflate`
 
 All methods are uppercase, hence `POST`
 
-All response codes are integer numbers, hence 404
+All response codes are integer numbers, hence `404`
 
 Key names constructed from uppercase values, `-`, `+` and `.` substituted with `_`, hence
 
