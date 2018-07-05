@@ -16,7 +16,9 @@
     "list of mime-types",
     "http methods",
     "content-encoding",
-    "content codings"
+    "content codings",
+	"response code",
+	"response status"
   ],
   "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
   "license": "ISC",

@@ -1,8 +1,8 @@
 # Standard and common HTTP headers and Mime types
 
-> current version 1.0.5
+> current version 1.0.6
 
-Provides standard and common non-standard http headers, mime-types, methods, content codings and tracking statuses.
+Provides standard and common non-standard http headers, mime-types, methods, content codings, response statuses and tracking statuses.
 
 All headers are capitalized, hence `Access-Control-Request-Method`
 
@@ -12,6 +12,8 @@ All content codings are lowercase, hence `deflate`
 
 All methods are uppercase, hence `POST`
 
+All response codes are integer numbers, hence 404
+
 Key names constructed from uppercase values, `-`, `+` and `.` substituted with `_`, hence
 
     Headers.STRICT_TRANSPORT_SECURITY //Strict-Transport-Security
@@ -19,6 +21,7 @@ Key names constructed from uppercase values, `-`, `+` and `.` substituted with `
     MimeTypes.Model.X3D_VRML          //model/x3d+vrml
     ContentEncodings.X_GZIP           //x-gzip
 	MimeTypes.Image.VND_WAP_WBMP      //image/vnd.wap.wbmp
+	ResponseCodes.I_AM_A_TEAPOT       //418
 
 ## Usage
 
@@ -33,13 +36,15 @@ Available at the moment
         TrackingStatuses, 
         MimeTypes, 
         Methods,
-        ContentEncodings
+        ContentEncodings,
+		ResponseCodes
     } = require('http-headers-js');
     
 - Headers - headers
 - TrackingStatuses - tracking statuses
 - Methods - http methods
 - ContentEncodings - http content coding registry
+- ResponseCodes - response codes
 - MimeTypes - yes, mime types, fair and square
 
     
@@ -120,6 +125,8 @@ Issues? Write to `sypachev_s_s@mail.ru`
 `X-DNS-Prefetch-Control`, `X-Robots-Tag`
 - Fixed `VIEWPORT-WIDTH` to `VIEWPORT_WIDTH`, `3GPP` to `_3GPP` (`_3GPP2`), `VND.RN_REALAUDIO` to `VND_RN_REALAUDIO`, `VND.WAVE` to `VND_WAVE`, `VND.MICROSOFT.ICON` to `VND_MICROSOFT_ICON`, `VND.WAP.WBMP` to `VND_WAP_WBMP`
 - Autotest key names
+### 1.0.6
+- Added `ResponseCodes`
 
 
 

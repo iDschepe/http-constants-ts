@@ -4,7 +4,8 @@ let chai = require('chai'),
 		TrackingStatuses, 
 		MimeTypes, 
 		Methods, 
-		ContentEncodings
+		ContentEncodings,
+		ResponseCodes
 	} = require('../index.js');
 	
 let nameReg = /^[A-Z_][A-Z_0-9]+$/;
@@ -74,6 +75,17 @@ describe("Test ContentEncodings", () => {
 	});
 	it ("should test key names", () => {
 		testKeys(ContentEncodings);
+	});
+});
+
+describe("Test ResponseCodes", () => {
+	it ("should access some", () => {
+		chai.expect(ResponseCodes.NOT_FOUND).to.equal(404);
+		chai.expect(ResponseCodes.OK).to.equal(200);
+		chai.expect(ResponseCodes.I_AM_A_TEAPOT).to.equal(418);
+	});
+	it ("should test key names", () => {
+		testKeys(ResponseCodes);
 	});
 });
 
