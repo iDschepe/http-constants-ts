@@ -14,3 +14,7 @@ console.log(Methods.POST);
 let { ContentEncodings } = require('http-headers-js');
 
 console.log(ContentEncodings.DEFLATE);
+
+let { ResponseCodes } = require('http-headers-js');
+
+console.log(ResponseCodes.NOT_FOUND);
