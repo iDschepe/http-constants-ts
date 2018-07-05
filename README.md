@@ -1,6 +1,6 @@
 # Standard and common HTTP headers and Mime types
 
-> current version 1.0.3
+> current version 1.0.4
 
 Provides standard and common non-standard http headers, mime-types, methods, content codings and tracking statuses.
 
@@ -113,3 +113,32 @@ Issues? Write to `sypachev_s_s@mail.ru`
 ### 1.0.3
 - Added `Content-Version`, `Derived-From`, `Alternates`, `MIME-Version`, `Public`, `Title` headers
 - Added `ContentEncodings`
+### 1.0.4
+- Added `Early-Data`, `Downlink`, `Save-Data`, `Referrer-Policy`, `Content-Security-Policy-Report-Only`, 
+`Expect-CT`, `Public-Key-Pins-Report-Only`, `X-Download-Options`, `X-Permitted-Cross-Domain-Policies`, `Sec-WebSocket-...`, `Large-Allocation`, `Server-Timing`, `SourceMap`,
+`X-DNS-Prefetch-Control`, `X-Robots-Tag`
+- Fixed `VIEWPORT-WIDTH` to `VIEWPORT_WIDTH`, `3GPP` to `_3GPP` (`_3GPP2`), `VND.RN_REALAUDIO` to `VND_RN_REALAUDIO`, `VND.WAVE` to `VND_WAVE`, `VND.MICROSOFT.ICON` to `VND_MICROSOFT_ICON`, `VND.WAP.WBMP` to `VND_WAP_WBMP`
+- Autotest key names
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -41,6 +41,8 @@ let Headers = {
     "COOKIE":                            "Cookie",
     "DATE":                              "Date",
 	"DERIVED_FROM":                      "Derived-From",
+	"DOWNLINK":                          "Downlink",
+	"EARLY_DATA":                        "Early-Data",
     "EXPECT":                            "Expect",
     "FORWARDED":                         "Forwarded",
     "FROM":                              "From",
@@ -57,7 +59,9 @@ let Headers = {
     "PROXY_AUTHORIZATION":               "Proxy-Authorization",
     "RANGE":                             "Range",
     "REFERER":                           "Referer",
+	"REFERRER_POLICY":                   "Referrer-Policy",
     "TE":                                "TE",
+	"SAVE_DATA":                         "Save-Data",
     "USER_AGENT":                        "User-Agent",
     "UPGRADE":                           "Upgrade",
     "VIA":                               "Via",
@@ -66,6 +70,7 @@ let Headers = {
 /*COMMON*/
     "UPGRADE_INSECURE_REQUESTS":         "Upgrade-Insecure-Requests",
     "X_REQUESTED_WITH":                  "X-Requested-With",
+	"X_ROBOTS_TAG":                      "X-Robots-Tag",
     "DNT":                               "DNT",
     "X_FORWARDED_FOR":                   "X-Forwarded-For",
     "X_FORWARDED_HOST":                  "X-Forwarded-Host",
@@ -112,7 +117,10 @@ let Headers = {
     "PROXY_AUTHENTICATE":                "Proxy-Authenticate",
 	"PUBLIC":                            "Public",
     "PUBLIC_KEY_PINS":                   "Public-Key-Pins",
+	"PUBLIC_KEY_PINS_REPORT_ONLY":       "Public-Key-Pins-Report-Only",
     "RETRY_AFTER":                       "Retry-After",
+	"SERVER_TIMING":                     "Server-Timing",
+	"SOURCEMAP":                         "SourceMap",
     "SERVER":                            "Server",
     "SET_COOKIE":                        "Set-Cookie",
     "STRICT_TRANSPORT_SECURITY":         "Strict-Transport-Security",
@@ -125,7 +133,10 @@ let Headers = {
     "WARNING":                           "Warning",
     "WWW_AUTHENTICATE":                  "WWW-Authenticate",
     "X_FRAME_OPTIONS":                   "X-Frame-Options",
+	"X_PERMITTED_CROSS_DOMAIN_POLICIES": "X-Permitted-Cross-Domain-Policies",
     "CONTENT_SECURITY_POLICY":           "Content-Security-Policy",
+	"CONTENT_SECURITY_POLICY_REPORT_ONLY": "Content-Security-Policy-Report-Only",
+	"EXPECT_CT":                         "Expect-CT",
     "X_CONTENT_SECURITY_POLICY":         "X-Content-Security-Policy",
     "X_WEBKIT_CSP":                      "X-WebKit-CSP",
     "REFRESH":                           "Refresh",
@@ -133,13 +144,23 @@ let Headers = {
     "TIMING_ALLOW_ORIGIN":               "Timing-Allow-Origin",
     "X_CONTENT_DURATION":                "X-Content-Duration",
     "X_CONTENT_TYPE_OPTIONS":            "X-Content-Type-Options",
+	"X_DOWNLOAD_OPTIONS":                "X-Download-Options",
     "X_POWERED_BY":                      "X-Powered-By",
     "X_REQUEST_ID":                      "X-Request-ID",
     "X_CORRELATION_ID":                  "X-Correlation-ID",
     "X_UA_COMPATIBLE":                   "X-UA-Compatible",
     "X_XSS_PROTECTION":                  "X-XSS-Protection",
 	"WIDTH":                             "Width",
-	"VIEWPORT-WIDTH":                    "Viewport-Width"
+	"VIEWPORT_WIDTH":                    "Viewport-Width",
+	"PING_FROM":                         "Ping-From",
+	"PING_TO":                           "Ping-To",
+	"SEC_WEBSOCKET_KEY":                 "Sec-WebSocket-Key",
+	"SEC_WEBSOCKET_EXTENSIONS":          "Sec-WebSocket-Extensions",
+	"SEC_WEBSOCKET_ACCEPT":              "Sec-WebSocket-Accept",
+	"SEC_WEBSOCKET_PROTOCOL":            "Sec-WebSocket-Protocol",
+	"SEC_WEBSOCKET_VERSION":             "Sec-WebSocket-Version",
+	"LARGE_ALLOCATION":                  "Large-Allocation",
+	"X_DNS_PREFETCH_CONTROL":            "X-DNS-Prefetch-Control"
 };
 
 let ContentEncodings = {
@@ -219,8 +240,8 @@ let MimeTypes = {
 		"VORBIS":           "audio/vorbis",
 		"X_MS_WMA":         "audio/x-ms-wma",
 		"X_MS_WAX":         "audio/x-ms-wax",
-		"VND.RN_REALAUDIO": "audio/vnd.rn-realaudio",
-		"VND.WAVE":         "audio/vnd.wave",
+		"VND_RN_REALAUDIO": "audio/vnd.rn-realaudio",
+		"VND_WAVE":         "audio/vnd.wave",
 		"WEBM":             "audio/webm"
 	},
 	"Image": {
@@ -230,8 +251,8 @@ let MimeTypes = {
 		"PNG":                "image/png",
 		"SVG_XML":            "image/svg+xml",
 		"TIFF":               "image/tiff",
-		"VND.MICROSOFT.ICON": "image/vnd.microsoft.icon",
-		"VND.WAP.WBMP":       "image/vnd.wap.wbmp",
+		"VND_MICROSOFT_ICON": "image/vnd.microsoft.icon",
+		"VND_WAP_WBMP":       "image/vnd.wap.wbmp",
 		"WEBP":               "image/webp"
 	},
 	"Message": {
@@ -277,8 +298,8 @@ let MimeTypes = {
 		"WEBM":      "video/webm",
 		"X_MS_WMV":  "video/x-ms-wmv",
 		"X_FLV":     "video/x-flv",
-		"3GPP":      "video/3gpp",
-		"3GPP2":     "video/3gpp2"
+		"_3GPP":     "video/3gpp",
+		"_3GPP2":    "video/3gpp2"
 	},
 	"Vnd": {
 		"Od": {
