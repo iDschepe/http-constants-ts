@@ -1,6 +1,6 @@
 {
   "name": "http-headers-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Standard and common non-standard HTTP headers and MIME-types",
   "main": "index.js",
   "scripts": {
