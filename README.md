@@ -37,7 +37,8 @@ Available at the moment
         MimeTypes, 
         Methods,
         ContentEncodings,
-        ResponseCodes
+        ResponseCodes,
+        RespCodeIs
     } = require('http-headers-js');
     
 - Headers - headers
@@ -46,8 +47,10 @@ Available at the moment
 - ContentEncodings - http content coding registry
 - ResponseCodes - response codes
 - MimeTypes - yes, mime types, fair and square
+- RespCodeIs - set of functions to get type of response code
 
-    
+### Constants
+
 Import and usage, as exemplified by express js middleware
 
     let { Headers } = require('http-headers-js');
@@ -96,6 +99,22 @@ To use mime types first access type, then subtype:
     
 There are also two duplicates for mime types. One is `MimeTypes.X` and `MimeType.Application.X`, another is `MimeTypes.Pkcs` and `MimeTypes.Application.Pkcs`
 
+### Functions
+
+There are 5 functions to check response code:
+
+- `RespCodeIs.Info`
+- `RespCodeIs.Success`
+- `RespCodeIs.Redirect`
+- `RespCodeIs.ClientErr`
+- `RespCodeIs.ServerErr`
+
+All functions take number argument, like
+
+    RespCodeIs.ServerErr(500) //return true
+    RespCodeIs.ServerErr(ResponseCodes.INTERNAL_SERVER_ERROR) //return true
+    RespCodeIs.ClientErr(ResponseCodes.USE_PROXY) //return false
+
 ## Dependencies
 
 No additional dependencies for production, `mocha` and `chai` for testing.
@@ -113,6 +132,9 @@ See [bitbucket repository](https://bitbucket.org/sypachev_s_s/http-headers-js/)
 Issues? Write to `sypachev_s_s@mail.ru`
 
 ## What's new
+### 1.0.7
+- Added `RespCodeIs`
+- Headers and Methods sorted in src
 ### 1.0.6
 - Added `ResponseCodes`
 ### 1.0.5
