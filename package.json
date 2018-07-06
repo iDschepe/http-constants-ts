@@ -1,7 +1,7 @@
 {
   "name": "http-headers-js",
   "version": "1.0.7",
-  "description": "Standard and common non-standard HTTP headers and MIME-types",
+  "description": "Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, response codes and cache-control instructions",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test"
@@ -18,7 +18,8 @@
     "content-encoding",
     "content codings",
     "response code",
-    "response status"
+    "response status",
+	"cache-control"
   ],
   "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
   "license": "ISC",

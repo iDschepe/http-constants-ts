@@ -6,7 +6,8 @@ let chai = require('chai'),
 		Methods, 
 		ContentEncodings,
 		ResponseCodes,
-		RespCodeIs
+		RespCodeIs,
+        CacheControls
 	} = require('../index.js');
 	
 let nameReg = /^[A-Z_][A-Z_0-9]+$/;
@@ -135,6 +136,17 @@ describe("Test RespCodeIs", () => {
 		chai.expect(RespCodeIs.ServerErr(387)).to.be.false;
 		chai.expect(RespCodeIs.ServerErr(601)).to.be.false;
 		chai.expect(RespCodeIs.ServerErr(ResponseCodes.USE_PROXY)).to.be.false;		
+	});
+});
+
+describe("Test Cache", () => {	
+	it ("should test key names", () => {
+		testKeys(CacheControls);
+	});
+	it ("should access some", () => {
+		chai.expect(CacheControls.MAX_AGE).to.equal("max-age");
+		chai.expect(CacheControls.NO_TRANSFORM).to.equal("no-transform");
+		chai.expect(CacheControls.PROXY_REVALIDATE).to.equal("proxy-revalidate");
 	});
 });
 

@@ -1,4 +1,4 @@
-let RespCodeIs = {
+var RespCodeIs = {
 	Info: function (code) {
 		return code > 99 && code < 200;
 	},
@@ -16,7 +16,25 @@ let RespCodeIs = {
 	}
 };
 
-let ResponseCodes = {
+var CacheControls = {
+    "IMMUTABLE": "immutable",
+    "MAX_AGE": "max-age",
+    "MAX_STALE": "max-stale",
+    "MIN_FRESH": "min-fresh",
+    "MUST_REVALIDATE": "must-revalidate",
+    "NO_CACHE": "no-cache",
+    "NO_STORE": "no-store",
+    "NO_TRANSFORM": "no-transform",
+    "ONLY_IF_CACHED": "only-if-cached",
+    "PRIVATE": "private",
+    "PROXY_REVALIDATE": "proxy-revalidate",
+    "PUBLIC": "public",
+    "S_MAXAGE": "s-maxage",
+    "STALE_IF_ERROR": "stale-if-error",
+    "STALE_WHILE_REVALIDATE": "stale-while-revalidate"
+};
+
+var ResponseCodes = {
 	
 	"CONTINUE":           100,
 	"SWITCHING_PROTOCOL": 101,
@@ -97,7 +115,7 @@ let ResponseCodes = {
 
 };
 
-let Methods = {
+var Methods = {
     "CONNECT": "CONNECT",
     "COPY": "COPY",
     "DELETE": "DELETE",
@@ -117,7 +135,7 @@ let Methods = {
     "VIEW": "VIEW"
 };
 
-let Headers = {
+var Headers = {
     "A_IM": "A-IM",
     "ACCEPT": "Accept",
     "ACCEPT_CH": "Accept-CH",
@@ -253,7 +271,7 @@ let Headers = {
     "X_XSS_PROTECTION": "X-XSS-Protection"
 };
 
-let ContentEncodings = {
+var ContentEncodings = {
     "AES128GCM": "aes128gcm",
     "BR": "br",
     "COMPRESS": "compress",
@@ -267,7 +285,7 @@ let ContentEncodings = {
     "X_GZIP": "x-gzip"
 };
 
-let TrackingStatuses = {
+var TrackingStatuses = {
     "UNDER_CONSTRUCTION":       "!",
     "DYNAMIC":                  "?",
     "GATEWAY":                  "G",
@@ -279,7 +297,7 @@ let TrackingStatuses = {
     "UPDATED":                  "U"
 };
 
-let MimeTypes = {
+var MimeTypes = {
 	"Application": {
         "ATOM_XML":     "application/atom+xml",
         "EDI_X12":      "application/EDI-X12",
@@ -437,6 +455,7 @@ module.exports.Methods			= Methods;
 module.exports.ContentEncodings = ContentEncodings;
 module.exports.ResponseCodes    = ResponseCodes;
 module.exports.RespCodeIs       = RespCodeIs;
+module.exports.CacheControls    = CacheControls;
 
 
 

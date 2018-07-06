@@ -1,8 +1,8 @@
 # Standard and common HTTP headers and Mime types
 
-> current version 1.0.7
+> Current version 1.0.8
 
-Provides standard and common non-standard http headers, mime-types, methods, content codings, response statuses and tracking statuses.
+Provides standard and common non-standard http headers, mime-types, methods, content codings, response statuses, cache-control instructions and tracking statuses.
 
 All headers are capitalized, hence `Access-Control-Request-Method`
 
@@ -14,6 +14,8 @@ All methods are uppercase, hence `POST`
 
 All response codes are integer numbers, hence `404`
 
+All Cache-Control instructions are lowercase, hence `min-fresh`
+
 Key names constructed from uppercase values, `-`, `+` and `.` substituted with `_`, hence
 
     Headers.STRICT_TRANSPORT_SECURITY //Strict-Transport-Security
@@ -22,6 +24,7 @@ Key names constructed from uppercase values, `-`, `+` and `.` substituted with `
     ContentEncodings.X_GZIP           //x-gzip
 	MimeTypes.Image.VND_WAP_WBMP      //image/vnd.wap.wbmp
 	ResponseCodes.I_AM_A_TEAPOT       //418
+	CacheControls.MAX_AGE             //max-age
 
 ## Usage
 
@@ -38,6 +41,7 @@ Available at the moment
         Methods,
         ContentEncodings,
         ResponseCodes,
+        CacheControls,
         RespCodeIs
     } = require('http-headers-js');
     
@@ -46,6 +50,7 @@ Available at the moment
 - Methods - http methods
 - ContentEncodings - http content coding registry
 - ResponseCodes - response codes
+- CacheControls - Cache-Control instructions
 - MimeTypes - yes, mime types, fair and square
 - RespCodeIs - set of functions to get type of response code
 
@@ -132,6 +137,9 @@ See [bitbucket repository](https://bitbucket.org/sypachev_s_s/http-headers-js/)
 Issues? Write to `sypachev_s_s@mail.ru`
 
 ## What's new
+### 1.0.8
+- Added `CacheControls`
+- Support older engines
 ### 1.0.7
 - Added `RespCodeIs`
 - Headers and Methods sorted in src
