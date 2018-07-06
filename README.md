@@ -113,20 +113,23 @@ See [bitbucket repository](https://bitbucket.org/sypachev_s_s/http-headers-js/)
 Issues? Write to `sypachev_s_s@mail.ru`
 
 ## What's new
-### 1.0.2
-- Added `Methods`
-- Added `Last-Event-ID`, `DPR`, `Content-DPR`, `Accept-CH`, `Accept-CH-Lifetime`, `Width`, `Viewport-Width`, `Keep-Alive` headers
-### 1.0.3
-- Added `Content-Version`, `Derived-From`, `Alternates`, `MIME-Version`, `Public`, `Title` headers
-- Added `ContentEncodings`
+### 1.0.6
+- Added `ResponseCodes`
 ### 1.0.5
 - Added `Early-Data`, `Downlink`, `Save-Data`, `Referrer-Policy`, `Content-Security-Policy-Report-Only`, 
 `Expect-CT`, `Public-Key-Pins-Report-Only`, `X-Download-Options`, `X-Permitted-Cross-Domain-Policies`, `Sec-WebSocket-...`, `Large-Allocation`, `Server-Timing`, `SourceMap`,
 `X-DNS-Prefetch-Control`, `X-Robots-Tag`
 - Fixed `VIEWPORT-WIDTH` to `VIEWPORT_WIDTH`, `3GPP` to `_3GPP` (`_3GPP2`), `VND.RN_REALAUDIO` to `VND_RN_REALAUDIO`, `VND.WAVE` to `VND_WAVE`, `VND.MICROSOFT.ICON` to `VND_MICROSOFT_ICON`, `VND.WAP.WBMP` to `VND_WAP_WBMP`
 - Autotest key names
-### 1.0.6
-- Added `ResponseCodes`
+### 1.0.3
+- Added `Content-Version`, `Derived-From`, `Alternates`, `MIME-Version`, `Public`, `Title` headers
+- Added `ContentEncodings`
+### 1.0.2
+- Added `Methods`
+- Added `Last-Event-ID`, `DPR`, `Content-DPR`, `Accept-CH`, `Accept-CH-Lifetime`, `Width`, `Viewport-Width`, `Keep-Alive` headers
+
+
+
 
 
 
