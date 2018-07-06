@@ -24,3 +24,6 @@ let { RespCodeIs } = require('http-headers-js');
 console.log(RespCodeIs.ServerErr(500));
 console.log(RespCodeIs.ServerErr(ResponseCodes.INTERNAL_SERVER_ERROR));
 console.log(RespCodeIs.ClientErr(ResponseCodes.USE_PROXY));
+
+let { CacheControls } = require('http-headers-js');
+console.log(CacheControls.MAX_AGE);
