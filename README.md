@@ -1,4 +1,4 @@
-# Standard and common HTTP headers and Mime types
+# Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions
 
 > Current version 1.0.9
 

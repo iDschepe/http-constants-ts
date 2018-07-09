@@ -1,7 +1,7 @@
 {
   "name": "http-headers-js",
   "version": "1.0.9",
-  "description": "Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, response codes and cache-control instructions",
+  "description": "Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions",
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test"
