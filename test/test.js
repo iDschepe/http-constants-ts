@@ -7,7 +7,9 @@ let chai = require('chai'),
 		ContentEncodings,
 		ResponseCodes,
 		RespCodeIs,
-        CacheControls
+        CacheControls,
+		CSPD,
+		CSPS
 	} = require('../index.js');
 	
 let nameReg = /^[A-Z_][A-Z_0-9]+$/;
@@ -147,6 +149,32 @@ describe("Test Cache", () => {
 		chai.expect(CacheControls.MAX_AGE).to.equal("max-age");
 		chai.expect(CacheControls.NO_TRANSFORM).to.equal("no-transform");
 		chai.expect(CacheControls.PROXY_REVALIDATE).to.equal("proxy-revalidate");
+	});
+});
+
+describe("Test CSPD", () => {
+	it ("should test key names", () => {
+		testKeys(CSPD);
+	});
+	it ("should access some", () => {
+		chai.expect(CSPD.BASE_URI).to.equal("base-uri");
+		chai.expect(CSPD.PLUGIN_TYPES).to.equal("plugin-types");
+		chai.expect(CSPD.IMG_SRC).to.equal("img-src");
+	});
+});
+
+describe("Test CSPS", () => {
+	it ("should test key names", () => {
+		testKeys(CSPS);
+	});
+	it ("should access some", () => {
+		chai.expect(CSPS.SELF).to.equal("self");
+		chai.expect(CSPS.NONE).to.equal("none");
+		chai.expect(CSPS.UNSAFE_EVAL).to.equal("unsafe-eval");
+		
+		chai.expect(CSPS.SELF_QTD).to.equal("'self'");
+		chai.expect(CSPS.NONE_QTD).to.equal("'none'");
+		chai.expect(CSPS.UNSAFE_EVAL_QTD).to.equal("'unsafe-eval'");
 	});
 });
 

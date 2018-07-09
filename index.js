@@ -16,6 +16,46 @@ var RespCodeIs = {
 	}
 };
 
+var CSPD = {
+	"BASE_URI": "base-uri",
+	"BLOCK_ALL_MIXED_CONTENT": "block-all-mixed-content",
+	"CHILD_SRC": "child-src",
+	"CONNECT_SRC": "connect-src",
+	"DEFAULT_SRC": "default-src",
+	"FONT_SRC": "font-src",
+	"FORM_ACTION": "form-action",
+	"FRAME_ANCESTORS": "frame-ancestors",
+	"FRAME_SRC": "frame-src",
+	"IMG_SRC": "img-src",
+	"MANIFEST_SRC": "manifest-src",
+	"MEDIA_SRC": "media-src",
+	"OBJECT_SRC": "object-src",
+	"PLUGIN_TYPES": "plugin-types",
+	"REFERRER": "referrer",
+	"REPORT_URI": "report-uri",
+	"REQUIRE_SRI_FOR": "require-sri-for",
+	"PREFETCH_SRC": "prefetch-src",
+	"SANDBOX": "sandbox",
+	"SCRIPT_SRC": "script-src",
+	"STYLE_SRC": "style-src",
+	"UPGRADE_INSECURE_REQUESTS": "upgrade-insecure-requests",
+	"WORKER_SRC": "worker-src"
+};
+
+var CSPS = {
+	"SELF": "self",
+	"NONE": "none",
+	"STRICT_DYNAMIC": "strict-dynamic",
+	"UNSAFE_INLINE": "unsafe-inline",
+	"UNSAFE_EVAL": "unsafe-eval",
+	//quoted
+	"SELF_QTD": "'self'",
+	"NONE_QTD": "'none'",
+	"STRICT_DYNAMIC_QTD": "'strict-dynamic'",
+	"UNSAFE_INLINE_QTD": "'unsafe-inline'",
+	"UNSAFE_EVAL_QTD": "'unsafe-eval'"
+};
+
 var CacheControls = {
     "IMMUTABLE": "immutable",
     "MAX_AGE": "max-age",
@@ -456,6 +496,8 @@ module.exports.ContentEncodings = ContentEncodings;
 module.exports.ResponseCodes    = ResponseCodes;
 module.exports.RespCodeIs       = RespCodeIs;
 module.exports.CacheControls    = CacheControls;
+module.exports.CSPD             = CSPD;
+module.exports.CSPS             = CSPS;
 
 
 

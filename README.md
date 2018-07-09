@@ -1,8 +1,8 @@
 # Standard and common HTTP headers and Mime types
 
-> Current version 1.0.8
+> Current version 1.0.9
 
-Provides standard and common non-standard http headers, mime-types, methods, content codings, response statuses, cache-control instructions and tracking statuses.
+Provides standard and common non-standard http headers, mime-types, methods, content codings, response statuses, CSP directives and sources, cache-control instructions and tracking statuses.
 
 All headers are capitalized, hence `Access-Control-Request-Method`
 
@@ -16,6 +16,8 @@ All response codes are integer numbers, hence `404`
 
 All Cache-Control instructions are lowercase, hence `min-fresh`
 
+All CSP directives and sources are lowercase, hence `unsafe-eval`
+
 Key names constructed from uppercase values, `-`, `+` and `.` substituted with `_`, hence
 
     Headers.STRICT_TRANSPORT_SECURITY //Strict-Transport-Security
@@ -25,7 +27,8 @@ Key names constructed from uppercase values, `-`, `+` and `.` substituted with `
 	MimeTypes.Image.VND_WAP_WBMP      //image/vnd.wap.wbmp
 	ResponseCodes.I_AM_A_TEAPOT       //418
 	CacheControls.MAX_AGE             //max-age
-
+    CSPS.UNSAFE_EVAL                  //unsafe-eval
+	
 ## Usage
 
 Install local
@@ -42,7 +45,9 @@ Available at the moment
         ContentEncodings,
         ResponseCodes,
         CacheControls,
-        RespCodeIs
+        RespCodeIs,
+        CSPD,
+        CSPS
     } = require('http-headers-js');
     
 - Headers - headers
@@ -51,6 +56,8 @@ Available at the moment
 - ContentEncodings - http content coding registry
 - ResponseCodes - response codes
 - CacheControls - Cache-Control instructions
+- CSPD - CSP Directives
+- CSPS - some CSP source values
 - MimeTypes - yes, mime types, fair and square
 - RespCodeIs - set of functions to get type of response code
 
@@ -104,6 +111,11 @@ To use mime types first access type, then subtype:
     
 There are also two duplicates for mime types. One is `MimeTypes.X` and `MimeType.Application.X`, another is `MimeTypes.Pkcs` and `MimeTypes.Application.Pkcs`
 
+CSPS contains two sets of values - common and with QTD suffix. QTD values are quoted:
+
+    CSPS.SELF     //string "self"
+    CSPS.SELF_QTD //string "'self'"
+
 ### Functions
 
 There are 5 functions to check response code:
@@ -137,6 +149,8 @@ See [bitbucket repository](https://bitbucket.org/sypachev_s_s/http-headers-js/)
 Issues? Write to `sypachev_s_s@mail.ru`
 
 ## What's new
+### 1.0.9
+- Added CSP directives and common sources
 ### 1.0.8
 - Added `CacheControls`
 - Support older engines
