@@ -19,7 +19,9 @@
     "content codings",
     "response code",
     "response status",
-    "cache-control"
+    "cache-control",
+	"Content-Security-Policy",
+	"CSP"
   ],
   "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
   "license": "ISC",

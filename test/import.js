@@ -27,3 +27,9 @@ console.log(RespCodeIs.ClientErr(ResponseCodes.USE_PROXY));
 
 let { CacheControls } = require('http-headers-js');
 console.log(CacheControls.MAX_AGE);
+
+let { CSPD, CSPS } = require('http-headers-js');
+
+console.log(CSPS.BASE_URI);
+console.log(CSPS.SELF);
+console.log(CSPS.SELF_QTD);
