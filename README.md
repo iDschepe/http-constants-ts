@@ -88,9 +88,9 @@ Import and usage, as exemplified by express js middleware
 
         static getExtensionByContentType (contentType) {            
             switch (contentType) {
-            case MimeTypes.PDF:
+            case MimeTypes.Application.PDF:
                 return "PDF";
-            case MimeTypes.WORD_2007:
+            case MimeTypes.Application.Vnd.MS.WORD_2007:
                 return "DOCX";
             defaut:
                 return null;
