@@ -56,7 +56,7 @@ Available at the moment
 - ContentEncodings - http content coding registry
 - ResponseCodes - response codes
 - CacheControls - Cache-Control instructions
-- CSPD - CSP Directives
+- CSPD - CSP directives
 - CSPS - some CSP source values
 - MimeTypes - yes, mime types, fair and square
 - RespCodeIs - set of functions to get type of response code
@@ -149,6 +149,8 @@ See [bitbucket repository](https://bitbucket.org/sypachev_s_s/http-headers-js/)
 Issues? Write to `sypachev_s_s@mail.ru`
 
 ## What's new
+### 1.0.10
+- Added more testing
 ### 1.0.9
 - Added CSP directives and common sources
 ### 1.0.8
