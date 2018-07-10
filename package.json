@@ -1,6 +1,6 @@
 {
   "name": "http-headers-js",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,8 @@
     "response code",
     "response status",
     "cache-control",
-	"Content-Security-Policy",
-	"CSP"
+    "Content-Security-Policy",
+    "CSP"
   ],
   "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
   "license": "ISC",
