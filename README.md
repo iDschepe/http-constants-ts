@@ -90,7 +90,7 @@ Import and usage, as exemplified by express js middleware
             switch (contentType) {
             case MimeTypes.Application.PDF:
                 return "PDF";
-            case MimeTypes.Application.Vnd.MS.WORD_2007:
+            case MimeTypes.Vnd.MS.WORD_2007:
                 return "DOCX";
             defaut:
                 return null;
