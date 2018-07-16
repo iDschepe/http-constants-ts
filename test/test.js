@@ -238,6 +238,13 @@ describe("Test CSPS", () => {
         chai.expect(CSPS.NONE_QTD).to.equal("'none'");
         chai.expect(CSPS.UNSAFE_EVAL_QTD).to.equal("'unsafe-eval'");
     });
+	it ("quoted match quoted unquoted", () => {
+		Object.keys(CSPS)
+		.filter(item => !/.*_QTD$/.test(item))
+		.forEach((key) => {
+			chai.expect("'" + CSPS[key] + "'").to.equal(CSPS[key + '_QTD']);
+		})
+	});
     it ("should test unqoted values", () => {
         let keys = Object.keys(CSPS);
         let uout = {};
