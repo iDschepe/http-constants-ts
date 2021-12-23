@@ -1,6 +1,6 @@
 {
   "name": "http-constants-ts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Http Constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions",
   "main": "lib/index.js",
   "files": [
