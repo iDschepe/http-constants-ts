@@ -1,3 +1,6 @@
+/**
+ * Collection namespace of HTTP Constants.
+ */
 export declare namespace HttpConst {
     enum CSPD {
         BASE_URI = "base-uri",
