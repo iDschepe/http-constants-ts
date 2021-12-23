@@ -1,7 +1,5 @@
 # Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions
 
-> Current version 1.0.0
-
 Provides standard and common non-standard http headers, mime-types, methods, content codings, response statuses, CSP directives and sources, cache-control instructions and tracking statuses.
 
 All headers are capitalized, hence `Access-Control-Request-Method`
