@@ -1,11 +1,26 @@
 {
-  "name": "http-headers-js",
-  "version": "1.0.10",
-  "description": "Http constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions",
-  "main": "index.js",
+  "name": "http-constants-ts",
+  "version": "1.0.0",
+  "description": "Http Constants for mime-types, headers, tracking-statuses, methods, content-encodings, csp, response codes and cache-control instructions",
+  "main": "lib/index.js",
+  "files": [
+    "lib/**/*"
+  ],
   "scripts": {
-    "test": "mocha test/test"
+    "build": "tsc",
+    "publish:dry": "npm run build && npm publish --dry-run"
   },
+  "author": "iDschepe",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/idschepe/http-constants-ts.git"
+  },
+  "homepage": "https://bitbucket.org/idschepe/http-constants-ts#readme",
   "keywords": [
     "http headers",
     "headers",
@@ -22,20 +37,5 @@
     "cache-control",
     "Content-Security-Policy",
     "CSP"
-  ],
-  "author": "Stepan Sypachev <sypachev_s_s@mail.ru>",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^2.5.3"
-  },
-  "directories": {
-    "test": "test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://bitbucket.org/sypachev_s_s/http-headers-js.git"
-  },
-  "homepage": "https://bitbucket.org/sypachev_s_s/http-headers-js#readme"
+  ]
 }
