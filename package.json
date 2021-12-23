@@ -18,9 +18,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/idschepe/http-constants-ts.git"
+    "url": "https://github.com/iDschepe/http-constants-ts.git"
   },
-  "homepage": "https://bitbucket.org/idschepe/http-constants-ts#readme",
+  "homepage": "https://github.com/iDschepe/http-constants-ts",
   "keywords": [
     "http headers",
     "headers",
