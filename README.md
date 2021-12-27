@@ -44,10 +44,6 @@ Available at the moment
 
 No additional dependencies for production.
 
-## Development
-
-See [bitbucket repository](https://bitbucket.org/iDschepe/http-headers-ts/)
-
 ## Direct Contacts
 
 Issues? Feel free to add a bug or create a PR. 
