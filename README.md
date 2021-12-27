@@ -44,14 +44,14 @@ Available at the moment
 
 No additional dependencies for production.
 
-## Direct Contacts
+## Contribute
 
-Issues? Feel free to add a bug or create a PR. 
+Missing constants? Issues?
+Please feel free to extend / create a pull request.
 
 Best regards
 iDschepe
 
-## What's new
-### 1.0.0
+## Credits
 
 Thanks to / forked from https://bitbucket.org/sypachev_s_s/http-headers-js
