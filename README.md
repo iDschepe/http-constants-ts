@@ -25,7 +25,7 @@ Key names constructed from uppercase values, `-`, `+` and `.` substituted with `
 
 Install local
 
-    npm install http-headers-ts --save
+    npm install http-constants-ts --save
 
 Available at the moment
 
